@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/registration-complition.css">
+    <title>Intake Main Flow</title>
+</head>
+
+<body>
+    <section class="intake-main-flow">
+        <h2>Intake Main Flow</h2>
+        <p class="required-info">Mandatory field</p>
+        <h3>Information</h3>
+        <form action="">
+            <div action="" autocomplete="on" class="registration-complition-form bordr-btm pd-btm-2">
+                <div class="col">
+                    <p>
+                        <lable for="intake-type" class="required">Intake Type</lable>
+                        <select id="intake-type" required>
+                            <option value="Referal" selected>Referal</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="phone">phone</lable>
+                        <input type="tel" id="phone">
+                    </p>
+                    <p>
+                        <lable for="email">email</lable>
+                        <input type="email" id="email">
+                    </p>
+                    <p>
+                        <lable for="appRegistration">Application Registration (Optional)</lable>
+                        <select name="appRegistration" id="appRegistration" class="txt-color-bl">
+                            <option value="APP0000116" selected>APP0000116</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="additionalInformationRequestedDate">Additional Information Requested Date (Optional)
+                        </lable>
+                        <input type="date" id="additionalInformationRequestedDate" value="2021-05-13"
+                            class="align-center">
+                    </p>
+                    <p>
+                        <lable for="remainingDaysBeforeReferral">Remaining Days Before Referral is Purged (Optional)
+                        </lable>
+                        <input type="number" id="remainingDaysBeforeReferral" value="13">
+                    </p>
+                    <p>
+                        <lable for="feePaymentDate">Fee Payment Date (Optional)</lable>
+                        <input type="date" id="feePaymentDate" value="2021-05-13" class="align-center">
+                    </p>
+                    <p class="check-box-content">
+                        <input type="checkbox" value="applicationFeeProcessed" id="appFeeProcessed" class="checkbox">
+                        <label for="appFeeProcessed">Application Fee Processed</label>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <lable for="enrollmentInitiationDateJquery">Enrollment Initiation Date jquery</lable>
+                        <input type="date" id="enrollmentInitiationDateJquery" class="bg-locked" value="2021-05-11">
+                    </p>
+                    <p>
+                        <lable class="required">Application Category</lable>
+                        <select name="ApplicationCategory" id="appCategory" required>
+                            <option value="ChiledSupport" selected>Child Support</option>
+                        </select>
+                    </p>
+                    <p class="mg-btm-8_4">
+                        <lable for="enrollSubmissionDate">Enrollment Submission Date (Optional)</lable>
+                        <input type="date" id="enrollSubmissionDate" class="align-center bg-locked" value="2021-05-11">
+                    </p>
+                    <p class="check-box-content mr-btm-1_25 ">
+                        <input type="checkbox" class="checkbox">
+                        <lable>Purged</lable>
+                    </p>
+                    <p>
+                        <lable for="exemptFromPaternity">Exempt from Paternity (Optional)</lable>
+                        <select name="exempt from paternity" id="exemptFromPaternity">
+                            <option value="No" selected>No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="enrollmentStatus">Enrollment Status (Optional)</lable>
+                        <select name="EnrollmentStatus" id="enrollmentStatus">
+                            <option value="Worklisted">Worklisted</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <h3>Maternity Information</h3>
+            <div action="" class="maternity-information-form bordr-btm pd-btm-2">
+                <div class="col">
+                    <p class="maternity-info">
+                        <input type="checkbox" id="unbornChile" class="checkbox">
+                        <lable for="unbornChile">Are you requesting child support services for an unborn shile?</lable>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <lable for="otherBioParent">Other known biological parent? (Optional)</lable>
+                        <select name="otherBioParent" id="otherBioParent">
+                            <option value="None">None</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <h3>Official Use</h3>
+            <div action="" class="officia-use bordr-btm pd-btm-2">
+                <div class="col">
+                    <p>
+                        <lable for="caseCategory">Case Category</lable>
+                        <select name="CaseCategory" id="caseCategory">
+                            <option value="active4_A">Active IV-A</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="areasOnlyIndicator">Arrears Only Indicator</lable>
+                        <select name="AreasOnlyIndicator" id="areasOnlyIndicator">
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="assignedCountryOwnership">Assigned County of Ownership</lable>
+                        <select name="AssignedCountryOwnership" id="assignedCountryOwnership">
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="intergovermentalCaseStatus">Intergovermental Case Status (details)</lable>
+                        <select name="IntergovermentalCaseStatus" id="intergovermentalCaseStatus">
+                            <option value="None">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="specialHandlingIndicatorForApplicant">Special Handling Indicator for Applicant
+                            (Optional)</lable>
+                        <select name="SpecialHandlingIndicatorForApplicant" id="specialHandlingIndicatorForApplicant">
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="specialHandlingIndicatorForOtherParent">Special Handling Indicator for Other Parent
+                            (Optional)</lable>
+                        <select name="SpecialHandlingIndicatorForOtherParent"
+                            id="specialHandlingIndicatorForOtherParent">
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <lable for="4_dIndicator" class="required">IV-D Indicator</lable>
+                        <select name="4_dIndicator" id="4_dIndicator" required>
+                            <option value="non-4_d">Non-IV-D</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="intergovernmentalCaseCategory">Intergovernmental Case Category (Optional)</lable>
+                        <select name="IntergovernmentalCaseCategory" id="intergovernmentalCaseCategory">
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="intergovernmentalCaseType">Intergovernmental Case Type (Optional)</lable>
+                        <select name="IntergovernmentalCaseType" id="intergovernmentalCaseType">
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                    <p>
+                        <lable for="caseNumber">Case Number</lable>
+                        <input type="text" id="caseNumber" placeholder="Search Case Number" class="search-icon"></input>
+                    </p>
+                    <p>
+                        <lable for="referralNumber">Referral Number</lable>
+                        <input type="text" placeholder="Search Referral Number" id="referralNumber" class="search-icon">
+                    </p>
+                </div>
+            </div>
+            <h3>System Information</h3>
+            <div class="system-information bordr-btm pd-btm-2">
+                <div class="col">
+                    <p>
+                        <lable for="enrollmentTakenByUser">Enrollment Taken by User</lable>
+                        <input type="text" id="enrollmentTakenByUser" value="Search Input" class="search-icon">
+                    </p>
+                    <p>
+                        <lable for="worker">Worker (Optional)</lable>
+                        <input type="text" id="worker" value="Search Input" class="search-icon">
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <lable for="intakeSupervisor">Intake Supervisor (Optional)</lable>
+                        <input type="text" id="intakeSupervisor" placeholder="Search" class="search-icon">
+                    </p>
+                    <p>
+                        <lable for="owner">Owner</lable>
+                        <input type="text" id="owner" value="Rajaneesh Banal" class="txt-color-bl search-icon">
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="next-btn">Next</a>
+        </form>
+    </section>
+</body>
+
+</html>

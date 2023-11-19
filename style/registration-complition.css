@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inika:wght@400;700&family=Inter:wght@300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,600&family=Public+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,700&display=swap');
+
+:root {
+    --white-grey: #F9F9F9;
+    --light-grey: #ebe5e5;
+    --extra-light-grey: #D1D1D1;
+    --red: #ff0000;
+    --pink: #FF00FF;
+    --white: #FFF;
+    --blue: #0050D8;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: rgb(207, 204, 204);
+    width: 100%;
+}
+
+.intake-main-flow {
+    margin: 2rem auto;
+    padding: 3rem;
+    width: 900px;
+    background: var(--white-grey);
+    border-radius: 8px;
+}
+
+.required-info {
+    margin: 3rem 0;
+}
+
+.required-info::before {
+    content: "* ";
+    color: var(--red);
+}
+
+
+.required::after {
+    content: "* ";
+    color: var(--red);
+    margin: 0.25rem;
+}
+
+
+input,
+select {
+    width: 392px;
+    padding: 0 0.5rem;
+    height: 36px;
+    margin: 0.5rem 0;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+    background: var(--white);
+}
+
+select {
+    cursor: pointer;
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 50% ;  
+      /* for Firefox */
+    -moz-appearance: none;
+  /* for Chrome */
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+  }
+
+.registration-complition-form, .system-information, .officia-use{
+    display: flex;
+    gap: 20px;
+}
+
+.bordr-btm {
+    border-bottom: 2px solid var(--extra-light-grey);
+}
+
+.check-box-content {
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    accent-color: var(--pink);
+}
+
+.maternity-info lable {
+    display: inline-block;
+    width: 90%;
+}
+
+.col {
+    width: 50%;
+}
+
+.bg-locked {
+    background: var(--light-grey) !important;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.mg-btm-8_4 {
+    margin-bottom: 8.4rem;
+}
+
+.mr-btm-1_25 {
+    margin-bottom: 1.25rem;
+}
+
+.maternity-information-form {
+    display: flex;
+    align-items: center;
+}
+
+.pd-btm-2 {
+    padding-bottom: 2rem;
+}
+
+.txt-color-bl {
+    color: var(--blue);
+}
+
+.next-btn {
+    width: 100px;
+    padding: 12px 0;
+    background-color: var(--blue);
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+.next-btn {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    text-decoration: none;
+    color: var(--white);
+}
+
+.search-icon {
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 50% ;  
+}
